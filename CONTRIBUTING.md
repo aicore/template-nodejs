@@ -18,7 +18,7 @@
 This is a template repository for nodejs and python.
 
 ## Project Status
-* Not Active.
+* Active.
 
 # Getting Started
 * see https://github.com/aicore/template-nodejs-ts/blob/main/README.md
