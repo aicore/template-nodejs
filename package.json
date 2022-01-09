@@ -30,11 +30,12 @@
   },
   "homepage": "https://github.com/aicore/template-nodejs#readme",
   "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
     "c8": "^7.11.0",
     "chai": "^4.3.4",
     "eslint": "^7.32.0",
-    "git-commit-msg-linter": "^3.3.3",
-    "husky": "^7.0.4",
+    "husky": "^7.0.0",
     "mocha": "^9.1.3"
   }
 }
