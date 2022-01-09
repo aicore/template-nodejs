@@ -1,4 +1,4 @@
-name: Phoenix build verification
+name: Build verification
 
 on:
   push:
