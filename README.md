@@ -1,2 +1,2 @@
-# template-nodejs-ts
-A template project with nodejs and python
+# template-nodejs
+A template project for nodejs

@@ -1,0 +1,19 @@
+{
+  "name": "template-nodejs",
+  "version": "1.0.0",
+  "description": "Template for nodejs with unit gulp build, test, coverage, code guardian, github and Other defaults",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aicore/template-nodejs.git"
+  },
+  "author": "Arun, core.ai",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/aicore/template-nodejs/issues"
+  },
+  "homepage": "https://github.com/aicore/template-nodejs#readme"
+}
