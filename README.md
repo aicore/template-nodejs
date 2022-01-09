@@ -5,7 +5,7 @@ coverage, reporting, Github actions and other goodies.
 Easily use this template to quick start a production ready nodejs project template.
 
 ## Code Guardian
-[![<app> build verification](https://github.com/aicore/phoenix/actions/workflows/build_verify.yml/badge.svg)](https://github.com/aicore/template-nodejs/actions/workflows/build_verify.yml)
+[![<app> build verification](https://github.com/aicore/template-nodejs/actions/workflows/build_verify.yml/badge.svg)](https://github.com/aicore/template-nodejs/actions/workflows/build_verify.yml)
 
 <a href="https://sonarcloud.io/summary/new_code?id=aicore_template-nodejs-ts">
   <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=alert_status" alt="Sonar code quality check" />
