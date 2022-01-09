@@ -9,8 +9,13 @@
     "eslint:fix": "npm run lint:fix",
     "lint": "eslint --quiet src test",
     "lint:fix": "eslint --quiet --fix src test",
-    "test": "mocha --timeout=3000",
-    "coverage": "c8 npm run test"
+    "test": "npm run test:unit && npm run test:integ",
+    "test:unit": "mocha test/unit/**/*.spec.js --timeout=3000",
+    "test:integ": "mocha test/integration/**/*.spec.js --timeout=3000",
+    "printReportsLink": "echo Detailed unit test coverage report: file:///$(pwd)/coverage-unit/index.html && echo Detailed integration test coverage report: file:///$(pwd)/coverage-integration/index.html",
+    "cover": "npm run cover:unit && npm run cover:integ",
+    "cover:unit": "c8 -c .nycrc.unit.json npm run test:unit && npm run --silent printReportsLink",
+    "cover:integ": "c8 -c .nycrc.integration.json npm run test:integ && npm run --silent printReportsLink"
   },
   "repository": {
     "type": "git",
