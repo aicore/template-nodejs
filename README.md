@@ -4,6 +4,30 @@ coverage, reporting, Github actions and other goodies.
 
 Easily use this template to quick start a production ready nodejs project template.
 
+## Code Guardian
+[![<app> build verification](https://github.com/aicore/phoenix/actions/workflows/build_verify.yml/badge.svg)](https://github.com/aicore/template-nodejs/actions/workflows/build_verify.yml)
+
+<a href="https://sonarcloud.io/summary/new_code?id=aicore_template-nodejs-ts">
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=alert_status" alt="Sonar code quality check" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=security_rating" alt="Security rating" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=vulnerabilities" alt="vulnerabilities" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=coverage" alt="Code Coverage" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=bugs" alt="Code Bugs" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=reliability_rating" alt="Reliability Rating" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=sqale_rating" alt="Maintainability Rating" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=ncloc" alt="Lines of Code" />
+  <img src="https://sonarcloud.io/api/project_badges/measure?project=aicore_template-nodejs-ts&metric=sqale_index" alt="Technical debt" />
+</a>
+
+
+# TODOs after template use
+1. Update package.json with your app defaults
+2. Check Build actions on pull requests.
+3. In sonar cloud, enable Automatic analysis from `Administration
+   Analysis Method` for the first time before a pull request is raised: ![image](https://user-images.githubusercontent.com/5336369/148695840-65585d04-5e59-450b-8794-54ca3c62b9fe.png)
+4. Check codacy runs on pull requests, set codacy defaults. You may remove codacy if sonar cloud is only needed.
+5. Update the above Code Guardian badges
+
 # Commands available
 ## Linting
 To lint the files in the project, run the following command:
@@ -82,6 +106,8 @@ Several automated workflows that check code integrity are integrated into this t
 These include:
 1. GitHub actions that runs build/test/coverage flows when a contributor raises a pull request
 2. [Sonar cloud](https://sonarcloud.io/) integration using `.sonarcloud.properties`
+   1. In sonar cloud, enable Automatic analysis from `Administration
+      Analysis Method` for the first time ![image](https://user-images.githubusercontent.com/5336369/148695840-65585d04-5e59-450b-8794-54ca3c62b9fe.png)
 
 ## IDE setup
 SonarLint is currently available as a free plugin for jetbrains, eclipse, vscode and visual studio IDEs.
