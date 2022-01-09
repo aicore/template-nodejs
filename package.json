@@ -10,7 +10,8 @@
     "lint": "eslint --quiet src test",
     "lint:fix": "eslint --quiet --fix src test",
     "test": "mocha --timeout=3000",
-    "coverage": "c8 npm run test"
+    "printReportsLink": "echo Detailed coverage report: file:///$(pwd)/coverage/index.html",
+    "coverage": "c8 npm run test && npm run --silent printReportsLink"
   },
   "repository": {
     "type": "git",
