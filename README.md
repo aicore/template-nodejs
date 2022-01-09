@@ -77,6 +77,20 @@ Unit and integration test coverage settings can be updated by configs `.nycrc.un
 
 See https://github.com/istanbuljs/nyc for config options.
 
+# Code Guardian
+Several automated workflows that check code integrity are integrated into this template.
+These include:
+1. GitHub actions that runs build/test/coverage flows when a contributor raises a pull request
+2. [Sonar cloud](https://sonarcloud.io/) integration using `.sonarcloud.properties`
+
+## IDE setup
+SonarLint is currently available as a free plugin for jetbrains, eclipse, vscode and visual studio IDEs.
+Use sonarLint plugin for webstorm or any of the available
+IDEs from this link before raising a pull request: https://www.sonarlint.org/ .
+
+SonarLint static code analysis checker is not yet available as a Brackets
+extension.
+
 ## Internals
 ### Testing framework: Mocha , assertion style: chai
  See https://mochajs.org/#getting-started on how to write tests
