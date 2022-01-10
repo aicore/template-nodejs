@@ -80,7 +80,7 @@
         "node": true
     },
     "parserOptions": {
-        "ecmaVersion": 9,
+        "ecmaVersion": 10,
         "sourceType": "module",
         "ecmaFeatures": {
             "arrowFunctions": true,
