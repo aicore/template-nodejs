@@ -29,6 +29,12 @@ Easily use this template to quick start a production ready nodejs project templa
 5. Update the above Code Guardian badges
 
 # Commands available
+## Building
+Since this is a pure JS template project, build command just runs test with coverage.
+```shell
+> npm run build
+```
+
 ## Linting
 To lint the files in the project, run the following command:
 ```shell
