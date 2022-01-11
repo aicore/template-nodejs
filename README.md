@@ -26,12 +26,14 @@ Easily use this template to quick start a production ready nodejs project templa
 3. In sonar cloud, enable Automatic analysis from `Administration
    Analysis Method` for the first time before a pull request is raised: ![image](https://user-images.githubusercontent.com/5336369/148695840-65585d04-5e59-450b-8794-54ca3c62b9fe.png)
 4. Check codacy runs on pull requests, set codacy defaults. You may remove codacy if sonar cloud is only needed.
-5. Update the above Code Guardian badges
+5. Update the above Code Guardian badges; change all `id=aicore_template-nodejs-ts` to the sonar id of your project fields.
 
 # Commands available
+
 ## Building
 Since this is a pure JS template project, build command just runs test with coverage.
 ```shell
+> npm install   // do this only once.
 > npm run build
 ```
 
