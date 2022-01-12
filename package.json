@@ -1,9 +1,18 @@
 {
-  "name": "template-nodejs",
+  "name": "@aicore/template-nodejs",
   "version": "1.0.0",
   "description": "Template for nodejs with unit gulp build, test, coverage, code guardian, github and Other defaults",
   "main": "index.js",
   "type": "module",
+  "keywords": [
+    "template",
+    "nodejs",
+    "unit",
+    "testing",
+    "mocha",
+    "chai",
+    "coverage"
+  ],
   "scripts": {
     "eslint": "npm run lint",
     "eslint:fix": "npm run lint:fix",
@@ -37,5 +46,7 @@
     "eslint": "8.6.0",
     "husky": "7.0.4",
     "mocha": "9.1.3"
+  },
+  "dependencies": {
   }
 }
