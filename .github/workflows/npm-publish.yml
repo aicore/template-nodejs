@@ -11,7 +11,8 @@ jobs:
   build-tasks:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Publishing package to @aicore npm repository
+        run: |
           npm install
           npm run build
           npm publish
