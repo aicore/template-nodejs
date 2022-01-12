@@ -1,0 +1,19 @@
+name: Publish package to npm
+# When anyone pushes to npm branch in this repo, the package will be published to npm. This action requires
+# access to NPM_TOKEN secret. Contact core.ai admins to get access to core.ais org tokens.
+# To publish to your own npm account, follow this https://docs.npmjs.com/creating-and-viewing-access-tokens
+
+on:
+  push:
+    branches: [ npm ]
+
+jobs:
+  build-tasks:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          npm install
+          npm run build
+          npm publish
+      - env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
