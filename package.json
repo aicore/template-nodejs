@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/aicore/template-nodejs#readme",
   "devDependencies": {
-    "@commitlint/cli": "16.0.2",
+    "@commitlint/cli": "16.1.0",
     "@commitlint/config-conventional": "16.0.0",
     "c8": "7.11.0",
     "chai": "4.3.4",
