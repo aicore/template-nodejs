@@ -1,5 +1,15 @@
 {
+  "docLinkHelpful": "https://blog.logrocket.com/renovate-dependency-updates-on-steroids/",
   "extends": [
     "config:base"
+  ],
+  "timezone": "Asia/Calcutta",
+  "schedule": ["after 9pm on sunday"],
+  "packageRules": [
+    {
+      "matchDepTypes": ["devDependencies", "dependencies"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "dependencies"
+    }
   ]
 }
