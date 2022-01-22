@@ -1,5 +1,4 @@
 {
-  "docLinkHelpful": "https://blog.logrocket.com/renovate-dependency-updates-on-steroids/",
   "extends": [
     "config:base"
   ],
