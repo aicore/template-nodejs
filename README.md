@@ -1,6 +1,6 @@
 # template-nodejs
 A template project for nodejs. Has integrated linting, testing,
-coverage, reporting, GitGub actions for publishing to npm repository and other goodies.
+coverage, reporting, GitGub actions for publishing to npm repository, dependency updates and other goodies.
 
 Easily use this template to quick start a production ready nodejs project template.
 
@@ -126,6 +126,14 @@ Alternatively, if you want to publish the package to your own npm account, pleas
 
 To edit the publishing workflow, please see file: `.github/workflows/npm-publish.yml`
 
+
+# Dependency updates
+  We use Rennovate for dependency updates: https://blog.logrocket.com/renovate-dependency-updates-on-steroids/
+  * By default, dep updates happen on sunday every week.
+  * The status of dependency updates can be viewed here if you have this repo permissions in github: https://app.renovatebot.com/dashboard#github/aicore/template-nodejs
+  * To edit rennovate options, edit the rennovate.json file in root, see https://docs.renovatebot.com/configuration-options/
+  Refer 
+  
 # Code Guardian
 Several automated workflows that check code integrity are integrated into this template.
 These include:
