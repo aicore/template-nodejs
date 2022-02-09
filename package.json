@@ -1,6 +1,6 @@
 {
   "name": "@aicore/template-nodejs",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Template for nodejs with unit gulp build, test, coverage, code guardian, github and Other defaults",
   "main": "index.js",
   "type": "module",
@@ -28,7 +28,8 @@
     "cover:integ": "c8 -c .nycrc.integration.json npm run test:integ && npm run --silent printReportsLink",
     "build": "npm run cover",
     "bumpPatchVersion": "npm --no-git-tag-version version patch",
-    "release": "npm run bumpPatchVersion"
+    "bumpPatchVersionWithGitTag": "npm version patch",
+    "release": "npm run bumpPatchVersionWithGitTag"
   },
   "files": [
     "src"
@@ -52,6 +53,5 @@
     "husky": "7.0.4",
     "mocha": "9.2.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
