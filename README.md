@@ -1,6 +1,6 @@
 # template-nodejs
 A template project for nodejs. Has integrated linting, testing,
-coverage, reporting, GitGub actions for publishing to npm repository, dependency updates and other goodies.
+coverage, reporting, GitHub actions for publishing to npm repository, dependency updates and other goodies.
 
 Easily use this template to quick start a production ready nodejs project template.
 
