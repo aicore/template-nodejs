@@ -1,6 +1,6 @@
 {
   "name": "@aicore/template-nodejs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Template for nodejs with unit gulp build, test, coverage, code guardian, github and Other defaults",
   "main": "index.js",
   "type": "module",
@@ -26,8 +26,13 @@
     "cover": "npm run cover:unit && npm run cover:integ",
     "cover:unit": "c8 -c .nycrc.unit.json npm run test:unit && npm run --silent printReportsLink",
     "cover:integ": "c8 -c .nycrc.integration.json npm run test:integ && npm run --silent printReportsLink",
-    "build": "npm run cover"
+    "build": "npm run cover",
+    "bumpPatchVersion": "npm --no-git-tag-version version patch",
+    "release": "npm run bumpPatchVersion"
   },
+  "files": [
+    "src"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/aicore/template-nodejs.git"
