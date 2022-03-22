@@ -61,19 +61,7 @@
         "semi": 2
     },
     "globals": {
-        "$": false,
-        "brackets": false,
-        "clearTimeout": false,
-        "console": false,
-        "define": false,
-        "require": false,
-        "setTimeout": false,
-        "window": false,
-        "ArrayBuffer": false,
-        "Uint32Array": false,
-        "WebSocket": false,
-        "XMLHttpRequest": false,
-        "quiet": true
+        "console": true
     },
     "env":{
         "es6": true,
