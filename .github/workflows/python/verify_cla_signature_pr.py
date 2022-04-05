@@ -116,7 +116,7 @@ def validate_cla_signature(pr_raiser_login):
     personal_contributers = extract_personal_contributer_details()
 
     if pr_raiser_login not in employer_contributers and pr_raiser_login not in personal_contributers:
-        return task_failed('### Error: Contributor Licence Agreement Signature Missing \n You have not signed the Contributor Licence Agreement. You can sign it by clicking the following link. \n <p align="center"> <a href="https://aicore.github.io/contributor-license-agreement/">Click here to sign the CLA</a></p>')
+        return task_failed('### Error: Contributor Licence Agreement Signature Missing \n Please sign the Contributor Licence Agreement by clicking the following link. \n <p align="center"> <a href="https://aicore.github.io/contributor-license-agreement/">Click here to sign the CLA</a></p>')
     
     print('Pass: User has signed the Contributor Licence Agreement')
     return SUCCESS_MESSAGE
