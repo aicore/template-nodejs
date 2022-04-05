@@ -1,4 +1,4 @@
-name: Reviewing Pull Request
+name: Checking CLA Signature
 # https://docs.github.com/en/actions/reference/context-and-expression-syntax-for-github-actions#github-context
 # The pull request target event provides RW token to github 
 # https://github.blog/2020-08-03-github-actions-improvements-for-fork-and-pull-request-workflows/
