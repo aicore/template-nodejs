@@ -104,8 +104,6 @@ def extract_employer_contributer_details():
 def validate_is_pull_request(pr_details):
     print('Validate pull request called')
     github_details = pr_details['github']
-    print('Git hub details:')
-    print(github_details)
     if github_details["event_name"] != "pull_request":
         print("Error! This operation is valid on github pull requests. Exiting. Event received: ",
               github_details["event_name"])

@@ -3,7 +3,7 @@ name: Comment on pull request post pull request auto review
 
 on: 
   workflow_run:
-    workflows: ["Reviewing Pull Request"]
+    workflows: ["Checking CLA Signature"]
     types:
       - completed
 
