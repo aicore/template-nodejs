@@ -49,7 +49,7 @@ jobs:
       - name: Review pull request
         run: |
           which git
-          if ! python ./.github/workflows/python/review_pr.py; then
+          if ! python ./.github/workflows/python/verify_cla_signature_pr.py; then
               echo "Pull request details could not be extracted"
               exit 1
           else
