@@ -78,7 +78,7 @@ def task_failed(comment):
 
 
 def extract_personal_contributer_details():
-    personal_cla_link = 'https://raw.githubusercontent.com/aicore/contributor-license-agreement/main/personal_contributor_licence_agreement.md'
+    personal_cla_link = sys.argv[1]
     f = requests.get(personal_cla_link)
     personal_cla_contents = f.text
 
@@ -90,7 +90,7 @@ def extract_personal_contributer_details():
 
 
 def extract_employer_contributer_details():
-    employer_cla_link = 'https://raw.githubusercontent.com/aicore/contributor-license-agreement/main/employer_contributor_license_agreement.md'
+    employer_cla_link = sys.argv[2]
     f = requests.get(employer_cla_link)
     employer_cla_contents = f.text
 
