@@ -49,12 +49,15 @@ jobs:
       - name: Review pull request
         run: |
           which git
-          if ! python ./.github/workflows/python/verify_cla_signature_pr.py; then
+          if ! python ./.github/workflows/python/verify_cla_signature_pr.py $PERSONAL_CLA_LINK $EMPLOYER_CLA_LINK; then
               echo "Pull request details could not be extracted"
               exit 1
           else
               echo "all good"
           fi
+        env:
+          EMPLOYER_CLA_LINK: https://raw.githubusercontent.com/aicore/contributor-license-agreement/main/employer_contributor_license_agreement.md
+          PERSONAL_CLA_LINK: https://raw.githubusercontent.com/aicore/contributor-license-agreement/main/personal_contributor_licence_agreement.md
       
       - uses: actions/upload-artifact@v2
         with:
