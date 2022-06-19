@@ -110,6 +110,12 @@ Unit and integration test coverage settings can be updated by configs `.nycrc.un
 See https://github.com/istanbuljs/nyc for config options.
 
 # Publishing packages to NPM
+
+  ## Preparing for release
+  Please run `npm run release` on the `main` branch and push the changes to main. The release command will bump the npm version.
+  
+  !NB: NPM publish will faill if there is another release with the same version.
+  ## Publishing
 To publish a package to npm, push contents to `npm` branch in 
 this repository. 
 
