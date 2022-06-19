@@ -25,7 +25,6 @@
     "printReportsLink": "echo Detailed unit test coverage report: file:///$(pwd)/coverage-unit/index.html && echo Detailed integration test coverage report: file:///$(pwd)/coverage-integration/index.html",
     "cover": "npm run cover:unit && npm run cover:integ",
     "cover:unit": "c8 -c .nycrc.unit.json npm run test:unit && npm run --silent printReportsLink",
-    "cover:integ": "c8 -c .nycrc.integration.json npm run test:integ && npm run --silent printReportsLink",
     "build": "npm run cover",
     "bumpPatchVersion": "npm --no-git-tag-version version patch",
     "bumpPatchVersionWithGitTag": "npm version patch",
