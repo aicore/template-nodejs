@@ -24,6 +24,6 @@ jobs:
       - name: Unit tests with coverage
         run: |
           npm run cover:unit
-      - name: Integration tests
+      - name: Running Integration tests
         run: |
           npm run test:integ
