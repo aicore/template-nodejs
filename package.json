@@ -1,6 +1,6 @@
 {
   "name": "@aicore/template-nodejs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Template for nodejs with unit gulp build, test, coverage, code guardian, github and Other defaults",
   "main": "index.js",
   "type": "module",
@@ -23,7 +23,7 @@
     "test:unit": "mocha test/unit/*.spec.js test/unit/**/*.spec.js --timeout=3000",
     "test:integ": "mocha test/integration/*.spec.js test/integration/**/*.spec.js --timeout=3000",
     "printReportsLink": "echo Detailed unit test coverage report: file:///$(pwd)/coverage-unit/index.html && echo Detailed integration test coverage report: file:///$(pwd)/coverage-integration/index.html",
-    "cover": "npm run cover:unit && npm run cover:integ",
+    "cover": "npm run cover:unit",
     "cover:unit": "c8 -c .nycrc.unit.json npm run test:unit && npm run --silent printReportsLink",
     "build": "npm run cover",
     "bumpPatchVersion": "npm --no-git-tag-version version patch",
