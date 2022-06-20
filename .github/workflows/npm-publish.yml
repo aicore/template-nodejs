@@ -23,6 +23,7 @@ jobs:
           npm run cover
       - name: Publishing package to npm repository
         run: |
+          node .github/workflows/js/validatePackage.cjs
           npm publish --access public
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
