@@ -26,7 +26,8 @@
     "cover": "npm run cover:unit",
     "cover:unit": "c8 -c .nycrc.unit.json npm run test:unit && npm run --silent printReportsLink",
     "vulnerabilityCheck": "echo Scanning for npm vulnarabilities && npm audit --prod",
-    "build": "npm run cover && npm run vulnerabilityCheck",
+    "build": "npm run cover && npm run createJSDocs && npm run vulnerabilityCheck",
+    "createJSDocs": "node build/jsDocGenerate.cjs src docs/generatedApiDocs && git add docs",
     "bumpPatchVersion": "npm --no-git-tag-version version patch",
     "bumpPatchVersionWithGitTag": "npm version patch",
     "release": "npm run bumpPatchVersionWithGitTag"
@@ -49,7 +50,10 @@
     "@commitlint/config-conventional": "16.2.4",
     "c8": "7.11.3",
     "chai": "4.3.6",
+    "cli-color": "^2.0.2",
+    "documentation": "^13.2.5",
     "eslint": "8.18.0",
+    "glob": "^8.0.3",
     "husky": "8.0.1",
     "mocha": "9.2.2"
   },
