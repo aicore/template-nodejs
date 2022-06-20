@@ -161,8 +161,19 @@ extension.
  See https://mochajs.org/#getting-started on how to write tests
  Use chai for BDD style assertions (expect, should etc..). See move here: https://www.chaijs.com/guide/styles/#expect
 
-### Mocks and spies: sinon
- if you want to mock/spy on fn() for unit tests, use sinon. refer docs: https://sinonjs.org/
+### Mocks and spies:
+
+ Since it is not that straight forward to mock es6 module imports, use the follow pull request as reference to mock
+imported libs:
+ 
+
+* sample pull request: https://github.com/aicore/libcache/pull/6/files
+* [setting up mocks](https://github.com/aicore/libcache/blob/485b1b6244f7022eb0a83d9f72d897fe712badbe/test/unit/setup-mocks.js)
+* [using the mocks](https://github.com/aicore/libcache/pull/6/files#diff-8ea7ccf28b28a0ae7b43e468abd3e9a8bb411bb329ad5cb45eb9a93709ed8dc5R2)
+ensure to import `setup-mocks.js` as the first import of all files in tests.
+
+#### using sinon lib if the above method doesn't fit your case
+if you want to mock/spy on fn() for unit tests, use sinon. refer docs: https://sinonjs.org/
 
 ### Note on coverage suite used here:
 we use c8 for coverage https://github.com/bcoe/c8. Its reporting is based on nyc, so detailed docs can be found
