@@ -30,7 +30,7 @@ const FILE_NAME_SUFFIX = '-API',
     MD_EXT = '.md';
 
 function getIndexMarkdown(docRoot, filePaths) {
-    let markdown = "# API docs\nThe list of all APIs for phoenix.\n";
+    let markdown = "# API docs\nThe list of all APIs:\n";
     for(let filePath of filePaths){
         let relativePathToDocRoot = filePath.replace(docRoot, ''); // Eg. utils/Metrics-API.md
         let fileName = path.basename(relativePathToDocRoot); // Metrics-API.md
