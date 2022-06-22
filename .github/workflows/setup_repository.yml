@@ -1,0 +1,19 @@
+name: Setup and Init repository after create from template.
+# only to be run once. You may delete this file after the repo is created from template
+
+on:
+  create:
+
+jobs:
+  setup_repository:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/github-script@v6
+        with:
+          script: |
+            console.log("Setting up the repository", context);
+            const org = context.payload.repository.owner.login;
+            const repoName = context.payload.repository.name;
+            const setupScript = require('.github/workflows/js/setupRepository.js');
+            setupScript.initRepo({github, context, org, repoName});
