@@ -21,6 +21,7 @@ Easily use this template to quick start a production ready nodejs project templa
 
 
 # TODOs after template use
+## !!!Please see all issues in the generated repository as an issue will be generated tracking the fix of each of the below items.  
 1. Update package.json with your app defaults
 2. Check Build actions on pull requests.
 3. create a home page in wiki by going to wiki link https://github.com/<your_org>/<your_repo>/wiki
