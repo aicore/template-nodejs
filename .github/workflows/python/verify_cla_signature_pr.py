@@ -147,7 +147,11 @@ def validate_commiters_cla(commits, employer_contributors, personal_contributors
 
 def validate_cla_signature(pr_raiser_login, commits):
     employer_contributors = extract_employer_contributer_details()
+    print('Contributors who signed Employer CLA: ')
+    print(*employer_contributors, sep = "\n")
     personal_contributors = extract_personal_contributer_details()
+    print('Contributors who signed Personal CLA: ')
+    print(*personal_contributors, sep = "\n")
 
     PR_RAISER_CLA_VALIDATION = validate_pr_raiser_cla(pr_raiser_login, employer_contributors, personal_contributors)
     COMMITERS_CLA_VALIDATION = validate_commiters_cla(commits, employer_contributors, personal_contributors)
