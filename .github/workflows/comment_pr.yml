@@ -1,7 +1,7 @@
 name: Comment on pull request post pull request auto review
 # depends on and only executes after pull_request_processor.yml is complete
 
-on: 
+on:
   workflow_run:
     workflows: ["Checking CLA Signature"]
     types:
@@ -28,7 +28,7 @@ jobs:
         uses: actions/github-script@v6.1.0
         with:
           script: |
-            var artifacts = await github.actions.listWorkflowRunArtifacts({
+            var artifacts = await github.rest.actions.listWorkflowRunArtifacts({
                owner: context.repo.owner,
                repo: context.repo.repo,
                run_id: ${{github.event.workflow_run.id }},
@@ -49,7 +49,7 @@ jobs:
           ls
           unzip pr.zip
           cat ./comment
-      
+
       - name: 'Comment on Current Pull Request'
         uses: actions/github-script@v6
         with:
