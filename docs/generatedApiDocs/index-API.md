@@ -24,9 +24,9 @@ Type: [function][2]
 
 ### Parameters
 
-*   `name`  
+*   `name` &#x20;
 
-Returns **[string][3]** 
+Returns **[string][3]**&#x20;
 
 [1]: https://github.com/aicore/template-nodejs/wiki/How-To-Write-Docs
 

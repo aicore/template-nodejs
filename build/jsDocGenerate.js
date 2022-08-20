@@ -19,11 +19,11 @@
  */
 
 /* eslint-env node */
-const documentation = require('documentation');
-const glob = require("glob");
-const path = require("path");
-const fs = require('fs');
-const clc = require('cli-color');
+import * as documentation from 'documentation';
+import glob from "glob";
+import * as path from "path";
+import * as fs from "fs";
+import clc from 'cli-color';
 
 const TAG_INCLUDE_IN_API_DOCS = "@INCLUDE_IN_API_DOCS";
 const FILE_NAME_SUFFIX = '-API',
