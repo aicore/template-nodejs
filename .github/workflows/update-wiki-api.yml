@@ -16,7 +16,7 @@ jobs:
           pwd
           ls -al
           cd srcRepo
-          npm install
+          npm ci
           npm run createJSDocs
           ls -al docs
         shell: bash
