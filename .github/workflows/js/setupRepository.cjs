@@ -50,7 +50,7 @@ Setup your repository default settings. Goto this url https://github.com/${org}/
 
 - [ ] In \`Settings> General> Pull Requests\` uncheck/disable \`Allow merge commits \`
 - [ ] In \`Settings> General> Pull Requests\` check/enable \`Allow auto-merge \` and \`Automatically delete head branches \`
-- [ ] Delete the file \`.github/workflows/repo_branch_created.yml\`
+- [ ] Delete the file \`.github/workflows/setup_repository.yml\ and \`.github/workflows/js/setupRepository.cjs\`
 `;
 }
 
