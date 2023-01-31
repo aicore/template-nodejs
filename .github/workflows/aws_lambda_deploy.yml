@@ -13,7 +13,7 @@ jobs:
         run: |
           npm ci --production
       - name: zip
-        uses: montudor/action-zip@v0.1.0
+        uses: montudor/action-zip@v0.1.1
         with:
           args: zip -qq -r ./bundle.zip ./
       - name: default deploy
