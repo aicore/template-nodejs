@@ -1,6 +1,6 @@
 {
   "name": "@aicore/template-nodejs",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Template for nodejs with unit gulp build, test, coverage, code guardian, github and Other defaults",
   "main": "src/index.js",
   "type": "module",
