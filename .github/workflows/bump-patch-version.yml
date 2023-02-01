@@ -13,6 +13,8 @@ jobs:
           ref: main
       - name: Bump patch version
         run: |
+          git config --global user.email "noreply@github.com"
+          git config --global user.name "GitHub Actions"
           npm version patch
           git status
           package_version=`node -p "require('./package.json').version"`
