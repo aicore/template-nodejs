@@ -35,14 +35,8 @@
  * @module hello
  */
 
-/**
- * says hello world
- * @param name
- * @returns {string}
- * @type {function}
- */
-function helloWorld(name) {
-    return "Hello World " + name;
-}
+import {startServer} from "./server.js";
 
-export default helloWorld;
+
+startServer();
+

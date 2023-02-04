@@ -20,7 +20,7 @@
     "lint:fix": "eslint --quiet --fix src test",
     "prepare": "test -d node_modules/husky && husky install || echo \"husky is not installed\"",
     "test": "npm run test:unit && npm run test:integ",
-    "test:unit": "mocha test/unit/*.spec.js test/unit/**/*.spec.js --timeout=3000",
+    "test:unit": "APP_CONFIG=./test/unit/utils/.app.json mocha test/unit/*.spec.js test/unit/**/*.spec.js  test/unit/**/*.spec.js  test/unit/**/**/*.spec.js --timeout=3000",
     "test:integ": "mocha test/integration/*.spec.js test/integration/**/*.spec.js --timeout=3000",
     "printReportsLink": "echo Detailed unit test coverage report: file:///$(pwd)/coverage-unit/index.html && echo Detailed integration test coverage report: file:///$(pwd)/coverage-integration/index.html",
     "cover": "npm run cover:unit",
@@ -30,7 +30,9 @@
     "createJSDocs": "node build/jsDocGenerate.js src docs/generatedApiDocs && git add docs",
     "bumpPatchVersion": "npm --no-git-tag-version version patch",
     "bumpPatchVersionWithGitTag": "npm version patch",
-    "release": "npm run bumpPatchVersionWithGitTag"
+    "release": "npm run bumpPatchVersionWithGitTag",
+    "serve": "node src/index.js",
+    "serve:dev": "nodemon src/index.js"
   },
   "files": [
     "src"
@@ -55,7 +57,11 @@
     "eslint": "8.28.0",
     "glob": "8.0.3",
     "husky": "8.0.2",
-    "mocha": "10.1.0"
+    "mocha": "10.1.0",
+    "nodemon": "2.0.20"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fastify": "4.12.0",
+    "@aicore/libcommonutils": "1.0.19"
+  }
 }
