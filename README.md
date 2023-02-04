@@ -1,22 +1,4 @@
 # template-nodejs
-
-```shell
-# do this to start server
-export export  APP_CONFIG=./src/.app.json
-npm install
-npm run serve 
-
-# To hit end point
-curl -X GET 'http://127.0.0.1:5000/hello?name=rambo'  -H 'authorization: Basic 123' -H 'Content-Type: application/json' -v 
-
-```
-```shell
-# use this for continuous reload while development 
-npm run serve:dev
-```
-
-
-
 A template project for nodejs. Has integrated linting, testing,
 coverage, reporting, GitHub actions for publishing to npm repository, dependency updates and other goodies.
 
