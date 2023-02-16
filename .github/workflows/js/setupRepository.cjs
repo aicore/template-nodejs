@@ -49,7 +49,8 @@ function _setupRepoComment(){
 Setup your repository default settings. Goto this url https://github.com/${org}/${repoName}/settings
 
 - [ ] In \`Settings> General> Pull Requests\` uncheck/disable \`Allow merge commits \`
-- [ ] In \`Settings> General> Pull Requests\` check/enable \`Allow auto-merge \` and \`Automatically delete head branches \`
+- [ ] In \`Settings> General> Pull Requests\` uncheck/disable \`Allow auto-merge \`. This is to prevent GitHub secrets leak after malicious pull request auto merges.
+- [ ] In \`Settings> General> Pull Requests\` check/enable \`Automatically delete head branches \`
 - [ ] Delete the file \`.github/workflows/setup_repository.yml\ and \`.github/workflows/js/setupRepository.cjs\`
 `;
 }
