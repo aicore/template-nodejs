@@ -1,7 +1,7 @@
-name: Build verification on push to main branch
+name: Build verification on pull request
 
 on:
-  push:
+  pull_request:
     branches: [ main ]
 
 jobs:
@@ -22,5 +22,7 @@ jobs:
         run: |
           npm run cover:unit
       - name: Running Integration tests
+        # SECURITY WARNING: Remove integration test run (this step) on pull request if any secret access is required to run integration tests.
+        # https://securitylab.github.com/research/github-actions-preventing-pwn-requests/
         run: |
           npm run test:integ
