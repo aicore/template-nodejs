@@ -20,7 +20,7 @@
 
 /* eslint-env node */
 import * as documentation from 'documentation';
-import glob from "glob";
+import {glob} from "glob";
 import * as path from "path";
 import * as fs from "fs";
 import clc from 'cli-color';
@@ -45,7 +45,7 @@ function getIndexMarkdown(docRoot, filePaths) {
 
 async function generateDocIndex(docRoot) {
     const indexFileName = `${docRoot}GitHub-API-Index.md`;
-    let allDocFiles = await _getAllFiles(docRoot, '/**/*.md');
+    let allDocFiles = await _getAllFiles(docRoot, '**/*.md');
     let indexMarkdown = getIndexMarkdown(docRoot, allDocFiles);
     console.log("creating index file: ", clc.green(indexFileName));
     fs.mkdirSync(path.dirname(indexFileName), { recursive: true })
@@ -53,18 +53,7 @@ async function generateDocIndex(docRoot) {
 }
 
 async function _getAllFiles(docRoot, globPattern) {
-    return new Promise((resolve, reject)=>{
-        let getDirectories = function (src, callback) {
-            glob(src + globPattern, callback);
-        };
-        getDirectories(docRoot, function (err, res) {
-            if (err) {
-                reject(err);
-            } else {
-                resolve(res);
-            }
-        });
-    });
+    return await glob(docRoot + globPattern, { ignore: 'node_modules/**' });
 }
 
 async function _processFile(filePath, srcRelativePath, generatedDocRoot) {
@@ -103,7 +92,7 @@ async function generateDocs() {
         generatedDocRoot = generatedDocRoot + "/";
     }
     console.log(`Generating docs for "${clc.green(srcRoot)}" to folder "${clc.green(generatedDocRoot)}"`);
-    let allSrcFiles = await _getAllFiles(srcRoot, '/**/*.js')
+    let allSrcFiles = await _getAllFiles(srcRoot, '**/*.js');
     console.log(`Found ${clc.blue(allSrcFiles.length)} js files. Scanning for files with comment // ${clc.blue(TAG_INCLUDE_IN_API_DOCS)} `);
     console.log(`Cleaning Generating docs folder "${clc.green(generatedDocRoot)}"`);
     fs.rmSync(generatedDocRoot, { recursive: true, force: true });
