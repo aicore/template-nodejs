@@ -24,12 +24,8 @@
  * See https://github.com/aicore/template-nodejs/wiki/How-To-Write-Docs for more details on how to style docs.
  * ### Use markdown headings!
  * and markdown code!
- * ```
- * // usage within core:
- * const Metrics = require("utils/Metrics");
- *
- * // usage within default extensions:
- * const Metrics = brackets.getModule("utils/Metrics");
+ * ```js
+ * console.log("write sample code examples with code blocks");
  * ```
  *
  * @module hello
