@@ -48,7 +48,7 @@
   "devDependencies": {
     "@commitlint/cli": "18.4.3",
     "@commitlint/config-conventional": "18.4.3",
-    "c8": "7.13.0",
+    "c8": "8.0.1",
     "chai": "4.3.7",
     "cli-color": "2.0.3",
     "documentation": "14.0.1",
