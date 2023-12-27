@@ -49,10 +49,10 @@
     "@commitlint/cli": "18.4.3",
     "@commitlint/config-conventional": "18.4.3",
     "c8": "8.0.1",
-    "chai": "4.3.7",
+    "chai": "4.3.10",
     "cli-color": "2.0.3",
-    "documentation": "14.0.1",
-    "eslint": "8.38.0",
+    "documentation": "14.0.2",
+    "eslint": "8.56.0",
     "glob": "^10.0.0",
     "husky": "8.0.3",
     "mocha": "10.2.0"
