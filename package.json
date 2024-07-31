@@ -53,7 +53,7 @@
     "cli-color": "2.0.4",
     "documentation": "14.0.3",
     "eslint": "8.57.0",
-    "glob": "^10.0.0",
+    "glob": "^11.0.0",
     "husky": "9.0.11",
     "mocha": "10.4.0"
   },
