@@ -46,16 +46,16 @@
   },
   "homepage": "https://github.com/aicore/template-nodejs#readme",
   "devDependencies": {
-    "@commitlint/cli": "19.3.0",
-    "@commitlint/config-conventional": "19.2.2",
+    "@commitlint/cli": "19.4.1",
+    "@commitlint/config-conventional": "19.4.1",
     "c8": "10.1.2",
     "chai": "5.1.1",
     "cli-color": "2.0.4",
     "documentation": "14.0.3",
     "eslint": "8.57.0",
     "glob": "^11.0.0",
-    "husky": "9.0.11",
-    "mocha": "10.4.0"
+    "husky": "9.1.5",
+    "mocha": "10.7.3"
   },
   "dependencies": {}
 }
